@@ -1,0 +1,32 @@
+// some metadata about your route
+name: "Login"
+description: "Log in a user"
+authed: false
+
+---
+
+// the input data for the route
+@input {
+  user: String
+  password: String
+}
+
+// the output data for the route
+@output {
+  token: SessionToken
+}
+
+// any errors that can occur
+@failures (
+  user_not_found
+  invalid_password
+  database_error
+)
+
+---
+
+// any helper types you may want to define
+SessionToken {
+  id: UUID
+  expires_at: Date
+}

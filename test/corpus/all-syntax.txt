@@ -1,0 +1,92 @@
+==========|||
+All syntax
+==========|||
+
+// some metadata about your route
+name: "Login"
+description: "Log in a user"
+authed: false
+
+---
+
+// the input data for the route
+@input {
+  user: String
+  password: String
+}
+
+// the output data for the route
+@output {
+  token: SessionToken
+}
+
+// any errors that can occur
+@failures (
+  user_not_found
+  invalid_password
+  database_error
+)
+
+---
+
+// any helper types you may want to define
+SessionToken {
+  id: UUID
+  expires_at: Date
+}
+
+----------|||
+
+(source_file
+  (comment)
+  (metadata
+    (name_metadata_entry
+      (name_metadata_keyword)
+      (string_literal))
+    (description_metadata_entry
+      (description_metadata_keyword)
+      (string_literal))
+    (authed_metadata_entry
+      (authed_metadata_keyword)
+      (boolean_literal)))
+  (divider)
+  (comment)
+  (route_io
+    (io_definition
+      (identifier)
+      (struct_definition_block
+        (struct_field
+          (identifier)
+          (string_type))
+        (struct_field
+          (identifier)
+          (string_type))))
+    (comment)
+    (io_definition
+      (identifier)
+      (struct_definition_block
+        (struct_field
+          (identifier)
+          (identifier))))
+    (comment)
+    (io_definition
+      (identifier)
+      (enum_definition_block
+        (enum_variant
+          (identifier))
+        (enum_variant
+          (identifier))
+        (enum_variant
+          (identifier)))))
+  (divider)
+  (comment)
+  (helper_definitions
+    (helper_definition
+      (identifier)
+      (struct_definition_block
+        (struct_field
+          (identifier)
+          (uuid_type))
+        (struct_field
+          (identifier)
+          (date_type))))))
