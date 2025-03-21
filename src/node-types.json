@@ -202,11 +202,26 @@
           "named": true
         },
         {
-          "type": "identifier",
+          "type": "io_label",
           "named": true
         },
         {
           "type": "struct_definition_block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "io_label",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]

@@ -176,12 +176,8 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "STRING",
-          "value": "@"
-        },
-        {
           "type": "SYMBOL",
-          "name": "identifier"
+          "name": "io_label"
         },
         {
           "type": "CHOICE",
@@ -195,6 +191,19 @@
               "name": "enum_definition_block"
             }
           ]
+        }
+      ]
+    },
+    "io_label": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "@"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "identifier"
         }
       ]
     },

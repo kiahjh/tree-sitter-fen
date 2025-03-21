@@ -53,7 +53,8 @@ SessionToken {
   (comment)
   (route_io
     (io_definition
-      (identifier)
+      (io_label
+        (identifier))
       (struct_definition_block
         (struct_field
           (identifier)
@@ -63,14 +64,16 @@ SessionToken {
           (string_type))))
     (comment)
     (io_definition
-      (identifier)
+      (io_label
+        (identifier))
       (struct_definition_block
         (struct_field
           (identifier)
           (identifier))))
     (comment)
     (io_definition
-      (identifier)
+      (io_label
+        (identifier))
       (enum_definition_block
         (enum_variant
           (identifier))

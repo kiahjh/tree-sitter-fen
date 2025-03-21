@@ -50,10 +50,11 @@ module.exports = grammar({
 
     io_definition: ($) =>
       seq(
-        `@`,
-        $.identifier,
+        $.io_label,
         choice($.struct_definition_block, $.enum_definition_block),
       ),
+
+    io_label: ($) => seq(`@`, $.identifier),
 
     // helper definitions
     helper_definitions: ($) => seq($.helper_definition),
