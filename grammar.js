@@ -61,9 +61,11 @@ module.exports = grammar({
 
     helper_definition: ($) =>
       seq(
-        $.identifier,
+        $.helper_type_name,
         choice($.struct_definition_block, $.enum_definition_block),
       ),
+
+    helper_type_name: ($) => $.identifier,
 
     // basic building blocks
     divider: () => `---`,

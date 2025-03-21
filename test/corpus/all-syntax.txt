@@ -94,7 +94,8 @@ SessionToken {
   (comment)
   (helper_definitions
     (helper_definition
-      (identifier)
+      (helper_type_name
+        (identifier))
       (struct_definition_block
         (struct_field
           (field_name

@@ -221,7 +221,7 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "identifier"
+          "name": "helper_type_name"
         },
         {
           "type": "CHOICE",
@@ -237,6 +237,10 @@
           ]
         }
       ]
+    },
+    "helper_type_name": {
+      "type": "SYMBOL",
+      "name": "identifier"
     },
     "divider": {
       "type": "STRING",
