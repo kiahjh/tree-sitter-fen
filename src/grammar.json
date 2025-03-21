@@ -292,7 +292,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_type"
+          "name": "type"
         }
       ]
     },
@@ -335,7 +335,7 @@
                 },
                 {
                   "type": "SYMBOL",
-                  "name": "_type"
+                  "name": "type"
                 },
                 {
                   "type": "STRING",
@@ -354,7 +354,7 @@
       "type": "PATTERN",
       "value": "[a-zA-Z_][a-zA-Z0-9_]*"
     },
-    "_type": {
+    "type": {
       "type": "CHOICE",
       "members": [
         {
@@ -428,7 +428,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_type"
+          "name": "type"
         },
         {
           "type": "STRING",
@@ -441,7 +441,7 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "_type"
+          "name": "type"
         },
         {
           "type": "STRING",

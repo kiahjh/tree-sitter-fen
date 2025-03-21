@@ -58,10 +58,12 @@ SessionToken {
       (struct_definition_block
         (struct_field
           (identifier)
-          (string_type))
+          (type
+            (string_type)))
         (struct_field
           (identifier)
-          (string_type))))
+          (type
+            (string_type)))))
     (comment)
     (io_definition
       (io_label
@@ -69,7 +71,8 @@ SessionToken {
       (struct_definition_block
         (struct_field
           (identifier)
-          (identifier))))
+          (type
+            (identifier)))))
     (comment)
     (io_definition
       (io_label
@@ -89,7 +92,9 @@ SessionToken {
       (struct_definition_block
         (struct_field
           (identifier)
-          (uuid_type))
+          (type
+            (uuid_type)))
         (struct_field
           (identifier)
-          (date_type))))))
+          (type
+            (date_type)))))))

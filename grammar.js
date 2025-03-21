@@ -74,15 +74,15 @@ module.exports = grammar({
 
     struct_definition_block: ($) => seq(`{`, repeat($.struct_field), `}`),
 
-    struct_field: ($) => seq($.identifier, `:`, $._type),
+    struct_field: ($) => seq($.identifier, `:`, $.type),
 
     enum_definition_block: ($) => seq(`(`, repeat($.enum_variant), `)`),
 
-    enum_variant: ($) => seq($.identifier, optional(seq(`(`, $._type, `)`))),
+    enum_variant: ($) => seq($.identifier, optional(seq(`(`, $.type, `)`))),
 
     identifier: () => /[a-zA-Z_][a-zA-Z0-9_]*/,
 
-    _type: ($) =>
+    type: ($) =>
       choice(
         $.int_type,
         $.float_type,
@@ -107,8 +107,8 @@ module.exports = grammar({
 
     date_type: () => `Date`,
 
-    array_type: ($) => seq(`[`, $._type, `]`),
+    array_type: ($) => seq(`[`, $.type, `]`),
 
-    optional_type: ($) => seq($._type, `?`),
+    optional_type: ($) => seq($.type, `?`),
   },
 });
