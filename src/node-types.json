@@ -233,7 +233,7 @@
           "named": true
         },
         {
-          "type": "string_literal",
+          "type": "title",
           "named": true
         }
       ]
@@ -326,6 +326,21 @@
         },
         {
           "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "title",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]

@@ -33,9 +33,10 @@ module.exports = grammar({
         optional($.authed_metadata_entry),
       ),
 
-    name_metadata_entry: ($) =>
-      seq($.name_metadata_keyword, `:`, $.string_literal),
+    name_metadata_entry: ($) => seq($.name_metadata_keyword, `:`, $.title),
     name_metadata_keyword: () => token(`name`),
+
+    title: ($) => $.identifier,
 
     description_metadata_entry: ($) =>
       seq($.description_metadata_keyword, `:`, $.string_literal),

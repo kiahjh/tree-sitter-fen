@@ -106,7 +106,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "string_literal"
+          "name": "title"
         }
       ]
     },
@@ -116,6 +116,10 @@
         "type": "STRING",
         "value": "name"
       }
+    },
+    "title": {
+      "type": "SYMBOL",
+      "name": "identifier"
     },
     "description_metadata_entry": {
       "type": "SEQ",

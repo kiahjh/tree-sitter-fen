@@ -3,7 +3,7 @@ All syntax
 ==========|||
 
 // some metadata about your route
-name: "Login"
+name: Login
 description: "Log in a user"
 authed: false
 
@@ -42,7 +42,8 @@ SessionToken {
   (metadata
     (name_metadata_entry
       (name_metadata_keyword)
-      (string_literal))
+      (title
+        (identifier)))
     (description_metadata_entry
       (description_metadata_keyword)
       (string_literal))
