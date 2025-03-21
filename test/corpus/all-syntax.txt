@@ -57,11 +57,13 @@ SessionToken {
         (identifier))
       (struct_definition_block
         (struct_field
-          (identifier)
+          (field_name
+            (identifier))
           (type
             (string_type)))
         (struct_field
-          (identifier)
+          (field_name
+            (identifier))
           (type
             (string_type)))))
     (comment)
@@ -70,7 +72,8 @@ SessionToken {
         (identifier))
       (struct_definition_block
         (struct_field
-          (identifier)
+          (field_name
+            (identifier))
           (type
             (identifier)))))
     (comment)
@@ -79,11 +82,14 @@ SessionToken {
         (identifier))
       (enum_definition_block
         (enum_variant
-          (identifier))
+          (variant_name
+            (identifier)))
         (enum_variant
-          (identifier))
+          (variant_name
+            (identifier)))
         (enum_variant
-          (identifier)))))
+          (variant_name
+            (identifier))))))
   (divider)
   (comment)
   (helper_definitions
@@ -91,10 +97,12 @@ SessionToken {
       (identifier)
       (struct_definition_block
         (struct_field
-          (identifier)
+          (field_name
+            (identifier))
           (type
             (uuid_type)))
         (struct_field
-          (identifier)
+          (field_name
+            (identifier))
           (type
             (date_type)))))))

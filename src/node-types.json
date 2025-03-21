@@ -81,11 +81,26 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
+          "type": "type",
           "named": true
         },
         {
-          "type": "type",
+          "type": "variant_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "field_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]
@@ -291,7 +306,7 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
+          "type": "field_name",
           "named": true
         },
         {
@@ -343,6 +358,21 @@
         },
         {
           "type": "uuid_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variant_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]

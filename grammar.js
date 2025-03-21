@@ -74,11 +74,15 @@ module.exports = grammar({
 
     struct_definition_block: ($) => seq(`{`, repeat($.struct_field), `}`),
 
-    struct_field: ($) => seq($.identifier, `:`, $.type),
+    struct_field: ($) => seq($.field_name, `:`, $.type),
+
+    field_name: ($) => $.identifier,
 
     enum_definition_block: ($) => seq(`(`, repeat($.enum_variant), `)`),
 
-    enum_variant: ($) => seq($.identifier, optional(seq(`(`, $.type, `)`))),
+    enum_variant: ($) => seq($.variant_name, optional(seq(`(`, $.type, `)`))),
+
+    variant_name: ($) => $.identifier,
 
     identifier: () => /[a-zA-Z_][a-zA-Z0-9_]*/,
 
