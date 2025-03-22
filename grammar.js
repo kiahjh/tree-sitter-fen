@@ -52,7 +52,7 @@ module.exports = grammar({
     io_definition: ($) =>
       seq(
         $.io_label,
-        choice($.struct_definition_block, $.enum_definition_block),
+        choice($.struct_definition_block, $.enum_definition_block, $.type),
       ),
 
     io_label: ($) => seq(`@`, $.identifier),

@@ -178,6 +178,10 @@
         {
           "type": "struct_definition_block",
           "named": true
+        },
+        {
+          "type": "type",
+          "named": true
         }
       ]
     }

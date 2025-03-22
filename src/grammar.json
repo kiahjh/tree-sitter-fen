@@ -193,6 +193,10 @@
             {
               "type": "SYMBOL",
               "name": "enum_definition_block"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "type"
             }
           ]
         }

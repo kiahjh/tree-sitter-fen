@@ -16,9 +16,7 @@ authed: false
 }
 
 // the output data for the route
-@output {
-  token: SessionToken
-}
+@output SessionToken
 
 // any errors that can occur
 @failures (
@@ -71,12 +69,8 @@ SessionToken {
     (io_definition
       (io_label
         (identifier))
-      (struct_definition_block
-        (struct_field
-          (field_name
-            (identifier))
-          (type
-            (identifier)))))
+      (type
+        (identifier)))
     (comment)
     (io_definition
       (io_label
